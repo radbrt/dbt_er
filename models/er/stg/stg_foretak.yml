@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: wrk_foretak
+    description: Foretak fra enhetsregisteret
+    columns:
+      - name: organisasjonsnummer
+        description: Organisasjonsnummer
+        tests:
+          - unique
+          - not_null
+
+  - name: wrk_virksomheter
+    description: Virksomheter (underenheter) fra enhetsregisteret
+    columns:
+      - name: organisasjonsnummer
+        description: Organisasjonsnummer
+        tests:
+          - unique
+          - not_null
