@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: enhetsregisteret
+    description: The enhetsregister kilde
+    database: radjobads
+    tables:
+      - name: wrk_foretak
+      - name: wrk_virksomheter
