@@ -11,10 +11,10 @@
     FROM `radjobads`.`enhetsregisteret`.`wrk_foretak`
 ), 
 max_date AS (
-        SELECT CAST(current_date AS DATE) AS current_date FROM `radjobads`.`enhetsregisteret`.`wrk_max_load_date`
+        SELECT CAST(max_valid_date AS DATE) AS max_valid_date FROM `radjobads`.`enhetsregisteret`.`wrk_max_load_date`
 )
 SELECT * FROM foretak
 WHERE valid_date IN(
-    SELECT current_date FROM max_date
+    SELECT max_valid_date FROM max_date
 );
 

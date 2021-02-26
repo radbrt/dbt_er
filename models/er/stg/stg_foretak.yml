@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: wrk_foretak
+  - name: wrk_foretak_010
     description: Foretak fra enhetsregisteret
     columns:
       - name: organisasjonsnummer
@@ -10,7 +10,7 @@ models:
           - unique
           - not_null
 
-  - name: wrk_virksomheter
+  - name: wrk_virksomheter_010
     description: Virksomheter (underenheter) fra enhetsregisteret
     columns:
       - name: organisasjonsnummer

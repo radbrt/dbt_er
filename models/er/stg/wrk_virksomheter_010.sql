@@ -8,9 +8,9 @@ WITH virksomheter AS (
     FROM {{ source('enhetsregisteret', 'wrk_virksomheter') }}
 ), 
 max_date AS (
-        SELECT CAST(current_date AS DATE) AS current_date FROM {{ ref('wrk_max_virk_load_date') }}
+        SELECT CAST(max_valid_date AS DATE) AS max_valid_date FROM {{ ref('wrk_max_virk_load_date') }}
 )
 SELECT * FROM virksomheter
 WHERE valid_date IN(
-    SELECT current_date FROM max_date
+    SELECT max_valid_date FROM max_date
 )

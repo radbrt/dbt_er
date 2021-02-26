@@ -5,8 +5,9 @@
         target_database='radjobads',
         target_schema='enhetsregisteret',
         unique_key='orgnr',
-        strategy='timestamp',
+        strategy='eventtime',
         updated_at='updated_at',
+        check_cols = ['navn', 'nkode1', 'antall_ansatte'],
         invalidate_hard_deletes=True
     )
 }}
