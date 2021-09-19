@@ -2,7 +2,7 @@ name: 'enhetsregisteret'
 version: '1.0.0'
 config-version: 2
 
-profile: 'enhetsregisteret'
+profile: 'default'
 
 source-paths: ["models"]
 analysis-paths: ["analysis"]
@@ -21,3 +21,6 @@ models:
       +materialized: view
     dwh:
       +materialized: view
+
+snapshots:
+  +target_schema: er

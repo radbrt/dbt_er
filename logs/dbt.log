@@ -19666,3 +19666,1910 @@ There are 2 unused configuration paths:
 2021-03-02 17:30:57.920381 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0cbe20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1e75e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1e7520>]}
 2021-03-02 17:30:57.920539 (MainThread): Flushing usage events
 2021-03-02 17:30:58.346440 (MainThread): Connection 'model.enhetsregisteret.wrk_virksomheter_020' was properly closed.
+2021-09-19 14:39:19.637615 (MainThread): Running with dbt=0.20.2
+2021-09-19 14:39:20.631627 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 14:39:20.633133 (MainThread): Tracking: tracking
+2021-09-19 14:39:20.647364 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa459a86970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa45a9c8bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa45a9c8a90>]}
+2021-09-19 14:39:20.658850 (MainThread): Partial parsing not enabled
+2021-09-19 14:39:20.675718 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 14:39:20.689343 (MainThread): Parsing macros/etc.sql
+2021-09-19 14:39:20.691553 (MainThread): Parsing macros/catalog.sql
+2021-09-19 14:39:20.697011 (MainThread): Parsing macros/adapters.sql
+2021-09-19 14:39:20.713970 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 14:39:20.716119 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 14:39:20.718320 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 14:39:20.726919 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 14:39:20.730421 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 14:39:20.741615 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 14:39:20.743024 (MainThread): Parsing macros/core.sql
+2021-09-19 14:39:20.746503 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 14:39:20.752101 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 14:39:20.761260 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 14:39:20.762609 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 14:39:20.777409 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 14:39:20.808782 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 14:39:20.827178 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 14:39:20.828611 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 14:39:20.835066 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 14:39:20.847500 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 14:39:20.853318 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 14:39:20.859264 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 14:39:20.863343 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 14:39:20.864042 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 14:39:20.864868 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 14:39:20.866104 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 14:39:20.873562 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 14:39:20.875490 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 14:39:20.876758 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 14:39:20.919208 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 14:39:20.920606 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 14:39:20.921672 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 14:39:20.922979 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 14:39:21.085416 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 14:39:21.093212 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 14:39:21.096024 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 14:39:21.098629 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 14:39:21.101224 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 14:39:21.103573 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 14:39:21.112722 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak".
+2021-09-19 14:39:21.116932 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa45aa0ffd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa45aa87d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa45ab0c460>]}
+2021-09-19 14:39:21.117097 (MainThread): Flushing usage events
+2021-09-19 14:39:21.589303 (MainThread): Connection 'snapshot.enhetsregisteret.dwh_foretak' was properly closed.
+2021-09-19 14:39:21.589525 (MainThread): Encountered an error:
+2021-09-19 14:39:21.589714 (MainThread): Compilation Error in snapshot dwh_foretak (snapshots/dwh_foretak.sql)
+  at path []: Snapshots must be configured with a 'strategy', 'unique_key', and 'target_schema'.
+2021-09-19 14:39:21.591959 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/base.py", line 361, in render_update
+    self.update_parsed_node(node, config)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/base.py", line 304, in update_parsed_node
+    config_dict = config.build_config_dict()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/context/context_config.py", line 293, in build_config_dict
+    return src.calculate_node_config_dict(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/context/context_config.py", line 203, in calculate_node_config_dict
+    finalized = config.finalize_and_validate()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/contracts/graph/model_config.py", line 534, in finalize_and_validate
+    self.validate(data)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/contracts/graph/model_config.py", line 507, in validate
+    raise ValidationError(
+hologram.ValidationError: Snapshots must be configured with a 'strategy', 'unique_key', and 'target_schema'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 298, in load
+    self.parse_project(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 407, in parse_project
+    parser.parse_file(block)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/snapshots.py", line 80, in parse_file
+    self.parse_node(block)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/base.py", line 385, in parse_node
+    self.render_update(node, config)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/base.py", line 365, in render_update
+    raise CompilationException(msg, node=node) from exc
+dbt.exceptions.CompilationException: Compilation Error in snapshot dwh_foretak (snapshots/dwh_foretak.sql)
+  at path []: Snapshots must be configured with a 'strategy', 'unique_key', and 'target_schema'.
+
+2021-09-19 14:43:36.843031 (MainThread): Running with dbt=0.20.2
+2021-09-19 14:43:37.298779 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 14:43:37.300369 (MainThread): Tracking: tracking
+2021-09-19 14:43:37.312514 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd802985a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8037c8d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8037c8be0>]}
+2021-09-19 14:43:37.324554 (MainThread): Partial parsing not enabled
+2021-09-19 14:43:37.343545 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 14:43:37.356750 (MainThread): Parsing macros/etc.sql
+2021-09-19 14:43:37.358666 (MainThread): Parsing macros/catalog.sql
+2021-09-19 14:43:37.364134 (MainThread): Parsing macros/adapters.sql
+2021-09-19 14:43:37.381038 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 14:43:37.383200 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 14:43:37.385442 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 14:43:37.394192 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 14:43:37.397752 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 14:43:37.408832 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 14:43:37.410755 (MainThread): Parsing macros/core.sql
+2021-09-19 14:43:37.413878 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 14:43:37.419586 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 14:43:37.428532 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 14:43:37.429894 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 14:43:37.444898 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 14:43:37.475701 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 14:43:37.494316 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 14:43:37.495787 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 14:43:37.502124 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 14:43:37.514519 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 14:43:37.520324 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 14:43:37.525807 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 14:43:37.529957 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 14:43:37.530716 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 14:43:37.531487 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 14:43:37.532718 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 14:43:37.540022 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 14:43:37.541739 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 14:43:37.542989 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 14:43:37.584370 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 14:43:37.586386 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 14:43:37.587375 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 14:43:37.588647 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 14:43:37.752546 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 14:43:37.760399 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 14:43:37.763299 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 14:43:37.765879 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 14:43:37.768456 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 14:43:37.770929 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 14:43:37.780353 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak".
+2021-09-19 14:43:37.805727 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:43:37.807492 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:43:37.809035 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:43:37.810483 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:43:37.820266 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8038ccf70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8038cf250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd803a37cd0>]}
+2021-09-19 14:43:37.820439 (MainThread): Flushing usage events
+2021-09-19 14:43:38.309732 (MainThread): Connection 'snapshot.enhetsregisteret.dwh_foretak' was properly closed.
+2021-09-19 14:43:38.309974 (MainThread): Encountered an error:
+2021-09-19 14:43:38.310168 (MainThread): Compilation Error in snapshot dwh_foretak (snapshots/dwh_foretak.sql)
+  Snapshot 'snapshot.enhetsregisteret.dwh_foretak' (snapshots/dwh_foretak.sql) depends on a source named 'enhetsregisteret.wrk_foretak_020' which was not found
+2021-09-19 14:43:38.317222 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 351, in load
+    self.process_sources(self.root_project.project_name)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 774, in process_sources
+    _process_sources_for_node(self.manifest, current_project, node)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1079, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 819, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/exceptions.py", line 606, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/exceptions.py", line 444, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in snapshot dwh_foretak (snapshots/dwh_foretak.sql)
+  Snapshot 'snapshot.enhetsregisteret.dwh_foretak' (snapshots/dwh_foretak.sql) depends on a source named 'enhetsregisteret.wrk_foretak_020' which was not found
+
+2021-09-19 14:44:26.438604 (MainThread): Running with dbt=0.20.2
+2021-09-19 14:44:26.866694 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 14:44:26.868507 (MainThread): Tracking: tracking
+2021-09-19 14:44:26.902875 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca3185b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca3fc9ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca3fc9b80>]}
+2021-09-19 14:44:26.915084 (MainThread): Partial parsing not enabled
+2021-09-19 14:44:26.921095 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca3fc2a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca3ff4a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcca3ff4730>]}
+2021-09-19 14:44:26.921285 (MainThread): Flushing usage events
+2021-09-19 14:44:27.377581 (MainThread): Encountered an error:
+2021-09-19 14:44:27.377852 (MainThread): Compilation Error
+  Error reading enhetsregisteret: er/stg/stg_foretak.yml - Runtime Error
+    Syntax error near line 15
+    ------------------------------
+    12 | 
+    13 |   - name: wrk_foretak_020
+    14 |     description: Foretak fra enhetsregisteret
+    15 |     ,
+    16 |   - name: wrk_virksomheter_010
+    17 |     description: Virksomheter (underenheter) fra enhetsregisteret
+    18 |     columns:
+    
+    Raw Error:
+    ------------------------------
+    while parsing a block mapping
+      in "<unicode string>", line 13, column 5
+    did not find expected key
+      in "<unicode string>", line 15, column 5
+2021-09-19 14:44:27.385898 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 65, in load_yaml_text
+    return safe_load(contents)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 60, in safe_load
+    return yaml.load(contents, Loader=SafeLoader)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "yaml/_yaml.pyx", line 707, in yaml._yaml.CParser.get_single_node
+  File "yaml/_yaml.pyx", line 725, in yaml._yaml.CParser._compose_document
+  File "yaml/_yaml.pyx", line 776, in yaml._yaml.CParser._compose_node
+  File "yaml/_yaml.pyx", line 890, in yaml._yaml.CParser._compose_mapping_node
+  File "yaml/_yaml.pyx", line 774, in yaml._yaml.CParser._compose_node
+  File "yaml/_yaml.pyx", line 851, in yaml._yaml.CParser._compose_sequence_node
+  File "yaml/_yaml.pyx", line 776, in yaml._yaml.CParser._compose_node
+  File "yaml/_yaml.pyx", line 892, in yaml._yaml.CParser._compose_mapping_node
+  File "yaml/_yaml.pyx", line 905, in yaml._yaml.CParser._parse_next_event
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 13, column 5
+did not find expected key
+  in "<unicode string>", line 15, column 5
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/schemas.py", line 106, in yaml_from_file
+    return load_yaml_text(source_file.contents)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/clients/yaml_helper.py", line 72, in load_yaml_text
+    raise dbt.exceptions.ValidationException(error)
+dbt.exceptions.ValidationException: Runtime Error
+  Syntax error near line 15
+  ------------------------------
+  12 | 
+  13 |   - name: wrk_foretak_020
+  14 |     description: Foretak fra enhetsregisteret
+  15 |     ,
+  16 |   - name: wrk_virksomheter_010
+  17 |     description: Virksomheter (underenheter) fra enhetsregisteret
+  18 |     columns:
+  
+  Raw Error:
+  ------------------------------
+  while parsing a block mapping
+    in "<unicode string>", line 13, column 5
+  did not find expected key
+    in "<unicode string>", line 15, column 5
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 207, in load
+    read_files(project, self.manifest.files, project_parser_files)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/read_files.py", line 137, in read_files
+    project_files['SchemaParser'] = read_files_for_parser(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/read_files.py", line 92, in read_files_for_parser
+    source_files = get_source_files(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/read_files.py", line 83, in get_source_files
+    file = load_source_file(fp, parse_file_type, project.project_name)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/read_files.py", line 23, in load_source_file
+    dfy = yaml_from_file(source_file)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/schemas.py", line 109, in yaml_from_file
+    raise CompilationException(
+dbt.exceptions.CompilationException: Compilation Error
+  Error reading enhetsregisteret: er/stg/stg_foretak.yml - Runtime Error
+    Syntax error near line 15
+    ------------------------------
+    12 | 
+    13 |   - name: wrk_foretak_020
+    14 |     description: Foretak fra enhetsregisteret
+    15 |     ,
+    16 |   - name: wrk_virksomheter_010
+    17 |     description: Virksomheter (underenheter) fra enhetsregisteret
+    18 |     columns:
+    
+    Raw Error:
+    ------------------------------
+    while parsing a block mapping
+      in "<unicode string>", line 13, column 5
+    did not find expected key
+      in "<unicode string>", line 15, column 5
+
+2021-09-19 14:44:46.375566 (MainThread): Running with dbt=0.20.2
+2021-09-19 14:44:46.783716 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 14:44:46.785644 (MainThread): Tracking: tracking
+2021-09-19 14:44:46.804738 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97c1185b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97c35e2cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97c35e2bb0>]}
+2021-09-19 14:44:46.816931 (MainThread): Partial parsing not enabled
+2021-09-19 14:44:46.837038 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 14:44:46.850491 (MainThread): Parsing macros/etc.sql
+2021-09-19 14:44:46.852454 (MainThread): Parsing macros/catalog.sql
+2021-09-19 14:44:46.858872 (MainThread): Parsing macros/adapters.sql
+2021-09-19 14:44:46.875986 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 14:44:46.878139 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 14:44:46.880446 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 14:44:46.888961 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 14:44:46.893794 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 14:44:46.904283 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 14:44:46.905884 (MainThread): Parsing macros/core.sql
+2021-09-19 14:44:46.909289 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 14:44:46.915068 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 14:44:46.924209 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 14:44:46.925632 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 14:44:46.941262 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 14:44:46.970953 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 14:44:46.989860 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 14:44:46.991288 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 14:44:46.997722 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 14:44:47.010535 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 14:44:47.016434 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 14:44:47.021677 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 14:44:47.025907 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 14:44:47.026593 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 14:44:47.027352 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 14:44:47.028583 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 14:44:47.035818 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 14:44:47.037335 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 14:44:47.038664 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 14:44:47.081344 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 14:44:47.082816 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 14:44:47.083759 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 14:44:47.084942 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 14:44:47.247956 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 14:44:47.255764 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 14:44:47.258852 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 14:44:47.261442 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 14:44:47.264204 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 14:44:47.266613 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 14:44:47.276467 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak".
+2021-09-19 14:44:47.303302 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:44:47.304915 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:44:47.306620 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:44:47.308276 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:44:47.316904 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97c3762d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97c36f6850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f97c36efe20>]}
+2021-09-19 14:44:47.317072 (MainThread): Flushing usage events
+2021-09-19 14:44:47.760522 (MainThread): Connection 'snapshot.enhetsregisteret.dwh_foretak' was properly closed.
+2021-09-19 14:44:47.760762 (MainThread): Encountered an error:
+2021-09-19 14:44:47.760961 (MainThread): Compilation Error in snapshot dwh_foretak (snapshots/dwh_foretak.sql)
+  Snapshot 'snapshot.enhetsregisteret.dwh_foretak' (snapshots/dwh_foretak.sql) depends on a source named 'enhetsregisteret.wrk_foretak_020' which was not found
+2021-09-19 14:44:47.766336 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 351, in load
+    self.process_sources(self.root_project.project_name)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 774, in process_sources
+    _process_sources_for_node(self.manifest, current_project, node)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1079, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 819, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/exceptions.py", line 606, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/exceptions.py", line 444, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in snapshot dwh_foretak (snapshots/dwh_foretak.sql)
+  Snapshot 'snapshot.enhetsregisteret.dwh_foretak' (snapshots/dwh_foretak.sql) depends on a source named 'enhetsregisteret.wrk_foretak_020' which was not found
+
+2021-09-19 14:45:21.648475 (MainThread): Running with dbt=0.20.2
+2021-09-19 14:45:21.966734 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 14:45:21.967705 (MainThread): Tracking: tracking
+2021-09-19 14:45:21.976200 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa726285b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7278c8d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7278c8be0>]}
+2021-09-19 14:45:21.987945 (MainThread): Partial parsing not enabled
+2021-09-19 14:45:21.999188 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 14:45:22.011283 (MainThread): Parsing macros/etc.sql
+2021-09-19 14:45:22.012921 (MainThread): Parsing macros/catalog.sql
+2021-09-19 14:45:22.018374 (MainThread): Parsing macros/adapters.sql
+2021-09-19 14:45:22.035949 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 14:45:22.038435 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 14:45:22.041226 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 14:45:22.049635 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 14:45:22.053137 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 14:45:22.064243 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 14:45:22.065737 (MainThread): Parsing macros/core.sql
+2021-09-19 14:45:22.070176 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 14:45:22.077777 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 14:45:22.087009 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 14:45:22.088534 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 14:45:22.104317 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 14:45:22.135637 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 14:45:22.155241 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 14:45:22.156992 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 14:45:22.163452 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 14:45:22.176357 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 14:45:22.182347 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 14:45:22.187588 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 14:45:22.191963 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 14:45:22.192656 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 14:45:22.193418 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 14:45:22.194779 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 14:45:22.203660 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 14:45:22.205510 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 14:45:22.207146 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 14:45:22.251175 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 14:45:22.252544 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 14:45:22.253501 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 14:45:22.254732 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 14:45:22.421043 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 14:45:22.429610 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 14:45:22.432705 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 14:45:22.435307 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 14:45:22.437918 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 14:45:22.440527 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 14:45:22.449964 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak".
+2021-09-19 14:45:22.451623 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa72791bdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa727986e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7279f7be0>]}
+2021-09-19 14:45:22.451809 (MainThread): Flushing usage events
+2021-09-19 14:45:22.937527 (MainThread): Connection 'snapshot.enhetsregisteret.dwh_foretak' was properly closed.
+2021-09-19 14:45:22.937757 (MainThread): Encountered an error:
+2021-09-19 14:45:22.937957 (MainThread): Compilation Error in snapshot dwh_foretak (snapshots/dwh_foretak.sql)
+  expected token ',', got 'check_cols'
+    line 8
+      check_cols=['navn', 'nkode1', 'antall_ansatte'],
+2021-09-19 14:45:22.942080 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/clients/jinja.py", line 517, in catch_jinja
+    yield
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/clients/jinja.py", line 544, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/jinja2/environment.py", line 941, in from_string
+    return cls.from_code(self, self.compile(source), globals, None)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<unknown>", line 8, in template
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got 'check_cols'
+  line 8
+    check_cols=['navn', 'nkode1', 'antall_ansatte'],
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 298, in load
+    self.parse_project(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 407, in parse_project
+    parser.parse_file(block)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/snapshots.py", line 80, in parse_file
+    self.parse_node(block)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/base.py", line 385, in parse_node
+    self.render_update(node, config)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/base.py", line 360, in render_update
+    self.render_with_context(node, config)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/base.py", line 273, in render_with_context
+    get_rendered(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/clients/jinja.py", line 591, in get_rendered
+    template = get_template(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/clients/jinja.py", line 544, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/clients/jinja.py", line 520, in catch_jinja
+    raise CompilationException(str(e), node) from e
+dbt.exceptions.CompilationException: Compilation Error in snapshot dwh_foretak (snapshots/dwh_foretak.sql)
+  expected token ',', got 'check_cols'
+    line 8
+      check_cols=['navn', 'nkode1', 'antall_ansatte'],
+
+2021-09-19 14:45:37.035289 (MainThread): Running with dbt=0.20.2
+2021-09-19 14:45:37.362958 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 14:45:37.364308 (MainThread): Tracking: tracking
+2021-09-19 14:45:37.380384 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c05888be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c066c9e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c066c9d60>]}
+2021-09-19 14:45:37.392573 (MainThread): Partial parsing not enabled
+2021-09-19 14:45:37.413539 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 14:45:37.426437 (MainThread): Parsing macros/etc.sql
+2021-09-19 14:45:37.428123 (MainThread): Parsing macros/catalog.sql
+2021-09-19 14:45:37.433568 (MainThread): Parsing macros/adapters.sql
+2021-09-19 14:45:37.451439 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 14:45:37.453555 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 14:45:37.455906 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 14:45:37.464492 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 14:45:37.468276 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 14:45:37.478721 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 14:45:37.480424 (MainThread): Parsing macros/core.sql
+2021-09-19 14:45:37.484095 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 14:45:37.490184 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 14:45:37.498870 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 14:45:37.500218 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 14:45:37.515260 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 14:45:37.546473 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 14:45:37.565337 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 14:45:37.566816 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 14:45:37.573218 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 14:45:37.585871 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 14:45:37.592165 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 14:45:37.597325 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 14:45:37.601426 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 14:45:37.602120 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 14:45:37.602930 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 14:45:37.604158 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 14:45:37.611682 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 14:45:37.613214 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 14:45:37.614487 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 14:45:37.656487 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 14:45:37.657984 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 14:45:37.658947 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 14:45:37.660157 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 14:45:37.826592 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 14:45:37.834250 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 14:45:37.837086 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 14:45:37.839841 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 14:45:37.842626 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 14:45:37.845062 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 14:45:37.854011 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak".
+2021-09-19 14:45:37.880964 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:45:37.882483 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:45:37.883948 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:45:37.885411 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:45:37.894526 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c067d53d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c067cf100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c067cfa30>]}
+2021-09-19 14:45:37.894710 (MainThread): Flushing usage events
+2021-09-19 14:45:38.341019 (MainThread): Connection 'snapshot.enhetsregisteret.dwh_foretak' was properly closed.
+2021-09-19 14:45:38.341261 (MainThread): Encountered an error:
+2021-09-19 14:45:38.341508 (MainThread): Compilation Error in snapshot dwh_foretak (snapshots/dwh_foretak.sql)
+  Snapshot 'snapshot.enhetsregisteret.dwh_foretak' (snapshots/dwh_foretak.sql) depends on a source named 'enhetsregisteret.wrk_foretak_010' which was not found
+2021-09-19 14:45:38.347100 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 351, in load
+    self.process_sources(self.root_project.project_name)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 774, in process_sources
+    _process_sources_for_node(self.manifest, current_project, node)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1079, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 819, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/exceptions.py", line 606, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/exceptions.py", line 444, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in snapshot dwh_foretak (snapshots/dwh_foretak.sql)
+  Snapshot 'snapshot.enhetsregisteret.dwh_foretak' (snapshots/dwh_foretak.sql) depends on a source named 'enhetsregisteret.wrk_foretak_010' which was not found
+
+2021-09-19 14:46:45.884865 (MainThread): Running with dbt=0.20.2
+2021-09-19 14:46:46.319235 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 14:46:46.321003 (MainThread): Tracking: tracking
+2021-09-19 14:46:46.331206 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8f4a739d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8f58f6cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8f58f6bb0>]}
+2021-09-19 14:46:46.342978 (MainThread): Partial parsing not enabled
+2021-09-19 14:46:46.363979 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 14:46:46.376914 (MainThread): Parsing macros/etc.sql
+2021-09-19 14:46:46.378814 (MainThread): Parsing macros/catalog.sql
+2021-09-19 14:46:46.384903 (MainThread): Parsing macros/adapters.sql
+2021-09-19 14:46:46.401772 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 14:46:46.403878 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 14:46:46.406244 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 14:46:46.414442 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 14:46:46.417976 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 14:46:46.430722 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 14:46:46.432135 (MainThread): Parsing macros/core.sql
+2021-09-19 14:46:46.435376 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 14:46:46.441494 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 14:46:46.450091 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 14:46:46.451421 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 14:46:46.466356 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 14:46:46.496108 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 14:46:46.514150 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 14:46:46.515592 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 14:46:46.521932 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 14:46:46.534325 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 14:46:46.541251 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 14:46:46.546465 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 14:46:46.550518 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 14:46:46.551207 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 14:46:46.551966 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 14:46:46.553189 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 14:46:46.560582 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 14:46:46.562089 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 14:46:46.563421 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 14:46:46.604374 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 14:46:46.605842 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 14:46:46.606812 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 14:46:46.608102 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 14:46:46.768709 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 14:46:46.776740 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 14:46:46.779747 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 14:46:46.782439 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 14:46:46.785032 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 14:46:46.787414 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 14:46:46.796923 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak".
+2021-09-19 14:46:46.822779 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:46:46.824336 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:46:46.825909 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:46:46.827492 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:46:46.835928 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8f5a62d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8f59fedc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8f59e7df0>]}
+2021-09-19 14:46:46.836091 (MainThread): Flushing usage events
+2021-09-19 14:46:47.314076 (MainThread): Connection 'snapshot.enhetsregisteret.dwh_foretak' was properly closed.
+2021-09-19 14:46:47.314308 (MainThread): Encountered an error:
+2021-09-19 14:46:47.314507 (MainThread): Compilation Error in snapshot dwh_foretak (snapshots/dwh_foretak.sql)
+  Snapshot 'snapshot.enhetsregisteret.dwh_foretak' (snapshots/dwh_foretak.sql) depends on a source named 'enhetsregisteret.wrk_foretak_010' which was not found
+2021-09-19 14:46:47.321200 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 351, in load
+    self.process_sources(self.root_project.project_name)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 774, in process_sources
+    _process_sources_for_node(self.manifest, current_project, node)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1079, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/parser/manifest.py", line 819, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/exceptions.py", line 606, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/exceptions.py", line 444, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in snapshot dwh_foretak (snapshots/dwh_foretak.sql)
+  Snapshot 'snapshot.enhetsregisteret.dwh_foretak' (snapshots/dwh_foretak.sql) depends on a source named 'enhetsregisteret.wrk_foretak_010' which was not found
+
+2021-09-19 14:47:32.679712 (MainThread): Running with dbt=0.20.2
+2021-09-19 14:47:33.111570 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 14:47:33.113319 (MainThread): Tracking: tracking
+2021-09-19 14:47:33.124047 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff78e38ac40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff78f1e4d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff78f1e4c10>]}
+2021-09-19 14:47:33.135838 (MainThread): Partial parsing not enabled
+2021-09-19 14:47:33.155557 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 14:47:33.169177 (MainThread): Parsing macros/etc.sql
+2021-09-19 14:47:33.171098 (MainThread): Parsing macros/catalog.sql
+2021-09-19 14:47:33.177179 (MainThread): Parsing macros/adapters.sql
+2021-09-19 14:47:33.193867 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 14:47:33.195979 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 14:47:33.198212 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 14:47:33.208421 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 14:47:33.214501 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 14:47:33.226760 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 14:47:33.228310 (MainThread): Parsing macros/core.sql
+2021-09-19 14:47:33.231826 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 14:47:33.237924 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 14:47:33.246599 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 14:47:33.248008 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 14:47:33.262954 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 14:47:33.293250 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 14:47:33.311790 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 14:47:33.313240 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 14:47:33.319707 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 14:47:33.332174 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 14:47:33.338115 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 14:47:33.343745 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 14:47:33.347878 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 14:47:33.348583 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 14:47:33.349366 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 14:47:33.350646 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 14:47:33.358159 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 14:47:33.359672 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 14:47:33.361001 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 14:47:33.402268 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 14:47:33.403661 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 14:47:33.404606 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 14:47:33.405863 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 14:47:33.568333 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 14:47:33.576794 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 14:47:33.579676 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 14:47:33.582718 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 14:47:33.585509 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 14:47:33.588000 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 14:47:33.597486 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak".
+2021-09-19 14:47:33.625305 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:47:33.626785 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:47:33.628278 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:47:33.629718 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:47:33.646301 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.er.stg
+- models.er.dwh
+
+2021-09-19 14:47:33.650152 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3c70e1a8-07f1-45e5-93b9-1f98188609e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff78f348f40>]}
+2021-09-19 14:47:33.656534 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-19 14:47:33.657238 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3c70e1a8-07f1-45e5-93b9-1f98188609e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff78f348ca0>]}
+2021-09-19 14:47:33.657494 (MainThread): Found 6 models, 4 tests, 1 snapshot, 0 analyses, 166 macros, 0 operations, 0 seed files, 2 sources, 0 exposures
+2021-09-19 14:47:33.658733 (MainThread): 
+2021-09-19 14:47:33.658986 (MainThread): Acquiring new bigquery connection "master".
+2021-09-19 14:47:33.659732 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_radjobads".
+2021-09-19 14:47:33.659860 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-19 14:47:35.506717 (ThreadPoolExecutor-0_0): Unhandled error while running:
+list dataset
+2021-09-19 14:47:35.507058 (ThreadPoolExecutor-0_0): __init__() got an unexpected keyword argument 'page_size'
+2021-09-19 14:47:35.508383 (MainThread): Connection 'master' was properly closed.
+2021-09-19 14:47:35.508499 (MainThread): Connection 'list_radjobads' was properly closed.
+2021-09-19 14:47:35.508859 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff78f2ec1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff78f216ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff78f31f820>]}
+2021-09-19 14:47:35.509217 (MainThread): Flushing usage events
+2021-09-19 14:47:35.979227 (MainThread): Encountered an error:
+2021-09-19 14:47:35.979502 (MainThread): Runtime Error
+  __init__() got an unexpected keyword argument 'page_size'
+2021-09-19 14:47:35.994216 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 153, in exception_handler
+    yield
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 204, in query_schemas
+    all_datasets = client.list_datasets(project=database,
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 433, in list_datasets
+    return page_iterator.HTTPIterator(
+TypeError: __init__() got an unexpected keyword argument 'page_size'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 425, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 514, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/utils.py", line 474, in connected
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 491, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 208, in list_schemas
+    return self.connections._retry_and_handle(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 185, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error
+  __init__() got an unexpected keyword argument 'page_size'
+
+2021-09-19 14:51:20.202742 (MainThread): Running with dbt=0.20.2
+2021-09-19 14:51:20.686057 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 14:51:20.688180 (MainThread): Tracking: tracking
+2021-09-19 14:51:20.702187 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9efc984b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9efd7d7d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9efd7d7be0>]}
+2021-09-19 14:51:20.714670 (MainThread): Partial parsing not enabled
+2021-09-19 14:51:20.735937 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 14:51:20.750221 (MainThread): Parsing macros/etc.sql
+2021-09-19 14:51:20.752190 (MainThread): Parsing macros/catalog.sql
+2021-09-19 14:51:20.758620 (MainThread): Parsing macros/adapters.sql
+2021-09-19 14:51:20.778096 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 14:51:20.780725 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 14:51:20.783421 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 14:51:20.793295 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 14:51:20.797480 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 14:51:20.809972 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 14:51:20.811416 (MainThread): Parsing macros/core.sql
+2021-09-19 14:51:20.814606 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 14:51:20.820466 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 14:51:20.829456 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 14:51:20.830847 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 14:51:20.846374 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 14:51:20.876826 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 14:51:20.898298 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 14:51:20.899871 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 14:51:20.907453 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 14:51:20.920347 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 14:51:20.926630 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 14:51:20.931900 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 14:51:20.936133 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 14:51:20.936832 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 14:51:20.937606 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 14:51:20.939065 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 14:51:20.946612 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 14:51:20.948206 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 14:51:20.949525 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 14:51:20.991844 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 14:51:20.993290 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 14:51:20.994263 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 14:51:20.995493 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 14:51:21.162687 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 14:51:21.170514 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 14:51:21.173472 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 14:51:21.176171 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 14:51:21.178776 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 14:51:21.181178 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 14:51:21.190591 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak".
+2021-09-19 14:51:21.215789 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:51:21.217344 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:51:21.218838 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:51:21.220330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:51:21.236659 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.er.dwh
+- models.er.stg
+
+2021-09-19 14:51:21.240622 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3c5a4df1-91b1-4da0-b5a6-bdb9419a98db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9efda47f10>]}
+2021-09-19 14:51:21.244947 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-19 14:51:21.245255 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3c5a4df1-91b1-4da0-b5a6-bdb9419a98db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9efda47c70>]}
+2021-09-19 14:51:21.245417 (MainThread): Found 6 models, 4 tests, 1 snapshot, 0 analyses, 166 macros, 0 operations, 0 seed files, 2 sources, 0 exposures
+2021-09-19 14:51:21.246379 (MainThread): 
+2021-09-19 14:51:21.246591 (MainThread): Acquiring new bigquery connection "master".
+2021-09-19 14:51:21.247535 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_radjobads".
+2021-09-19 14:51:21.247653 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-19 14:51:21.881069 (ThreadPoolExecutor-0_0): Unhandled error while running:
+list dataset
+2021-09-19 14:51:21.881432 (ThreadPoolExecutor-0_0): __init__() got an unexpected keyword argument 'page_size'
+2021-09-19 14:51:21.882757 (MainThread): Connection 'master' was properly closed.
+2021-09-19 14:51:21.882873 (MainThread): Connection 'list_radjobads' was properly closed.
+2021-09-19 14:51:21.883273 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9efd89aeb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9efd7fcdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9efd8d4f40>]}
+2021-09-19 14:51:21.883650 (MainThread): Flushing usage events
+2021-09-19 14:51:22.337965 (MainThread): Encountered an error:
+2021-09-19 14:51:22.338235 (MainThread): Runtime Error
+  __init__() got an unexpected keyword argument 'page_size'
+2021-09-19 14:51:22.351298 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 153, in exception_handler
+    yield
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 204, in query_schemas
+    all_datasets = client.list_datasets(project=database,
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 433, in list_datasets
+    return page_iterator.HTTPIterator(
+TypeError: __init__() got an unexpected keyword argument 'page_size'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 425, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 514, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/utils.py", line 474, in connected
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 491, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 208, in list_schemas
+    return self.connections._retry_and_handle(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 185, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error
+  __init__() got an unexpected keyword argument 'page_size'
+
+2021-09-19 14:51:35.603624 (MainThread): Running with dbt=0.20.2
+2021-09-19 14:51:35.894649 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-09-19 14:51:35.895609 (MainThread): Tracking: tracking
+2021-09-19 14:51:35.903236 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa325373a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3260ccd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3260ccbe0>]}
+2021-09-19 14:51:35.915689 (MainThread): Partial parsing not enabled
+2021-09-19 14:51:35.929229 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 14:51:35.941962 (MainThread): Parsing macros/etc.sql
+2021-09-19 14:51:35.943577 (MainThread): Parsing macros/catalog.sql
+2021-09-19 14:51:35.949034 (MainThread): Parsing macros/adapters.sql
+2021-09-19 14:51:35.966106 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 14:51:35.968342 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 14:51:35.970532 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 14:51:35.979120 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 14:51:35.982590 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 14:51:35.993236 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 14:51:35.994626 (MainThread): Parsing macros/core.sql
+2021-09-19 14:51:35.998114 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 14:51:36.003737 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 14:51:36.013436 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 14:51:36.014762 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 14:51:36.029792 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 14:51:36.059805 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 14:51:36.077936 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 14:51:36.079348 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 14:51:36.085714 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 14:51:36.098327 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 14:51:36.104143 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 14:51:36.109741 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 14:51:36.113741 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 14:51:36.114431 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 14:51:36.115193 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 14:51:36.116483 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 14:51:36.123808 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 14:51:36.125754 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 14:51:36.127006 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 14:51:36.168762 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 14:51:36.170119 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 14:51:36.171126 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 14:51:36.172523 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 14:51:36.339423 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 14:51:36.347274 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 14:51:36.350190 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 14:51:36.352832 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 14:51:36.355533 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 14:51:36.358193 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 14:51:36.367293 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak".
+2021-09-19 14:51:36.393203 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:51:36.394668 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:51:36.396157 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:51:36.397603 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:51:36.413943 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.er.dwh
+- models.er.stg
+
+2021-09-19 14:51:36.417718 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '43357f8b-f1fd-4b53-a1a9-43050c516e59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa326442f10>]}
+2021-09-19 14:51:36.421839 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-19 14:51:36.422140 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '43357f8b-f1fd-4b53-a1a9-43050c516e59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa326442c70>]}
+2021-09-19 14:51:36.422293 (MainThread): Found 6 models, 4 tests, 1 snapshot, 0 analyses, 166 macros, 0 operations, 0 seed files, 2 sources, 0 exposures
+2021-09-19 14:51:36.423379 (MainThread): 
+2021-09-19 14:51:36.423585 (MainThread): Acquiring new bigquery connection "master".
+2021-09-19 14:51:36.425080 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_radjobads".
+2021-09-19 14:51:36.425195 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-19 14:51:36.892687 (ThreadPoolExecutor-0_0): Unhandled error while running:
+list dataset
+2021-09-19 14:51:36.892991 (ThreadPoolExecutor-0_0): __init__() got an unexpected keyword argument 'page_size'
+2021-09-19 14:51:36.894110 (MainThread): Connection 'master' was properly closed.
+2021-09-19 14:51:36.894221 (MainThread): Connection 'list_radjobads' was properly closed.
+2021-09-19 14:51:36.894529 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa326416d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa32618ceb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3260ebc40>]}
+2021-09-19 14:51:36.894843 (MainThread): Flushing usage events
+2021-09-19 14:51:37.343338 (MainThread): Encountered an error:
+2021-09-19 14:51:37.343595 (MainThread): Runtime Error
+  __init__() got an unexpected keyword argument 'page_size'
+2021-09-19 14:51:37.347400 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 153, in exception_handler
+    yield
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 204, in query_schemas
+    all_datasets = client.list_datasets(project=database,
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 433, in list_datasets
+    return page_iterator.HTTPIterator(
+TypeError: __init__() got an unexpected keyword argument 'page_size'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 425, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 514, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/utils.py", line 474, in connected
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 491, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 208, in list_schemas
+    return self.connections._retry_and_handle(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 185, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error
+  __init__() got an unexpected keyword argument 'page_size'
+
+2021-09-19 14:55:57.828793 (MainThread): Running with dbt=0.20.2
+2021-09-19 14:55:58.233494 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-09-19 14:55:58.235353 (MainThread): Tracking: tracking
+2021-09-19 14:55:58.245461 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4f2374940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4f30cbd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4f30cbc70>]}
+2021-09-19 14:55:58.258317 (MainThread): Partial parsing not enabled
+2021-09-19 14:55:58.280052 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 14:55:58.292188 (MainThread): Parsing macros/etc.sql
+2021-09-19 14:55:58.294106 (MainThread): Parsing macros/catalog.sql
+2021-09-19 14:55:58.299538 (MainThread): Parsing macros/adapters.sql
+2021-09-19 14:55:58.316358 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 14:55:58.318468 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 14:55:58.320678 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 14:55:58.329333 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 14:55:58.332904 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 14:55:58.343781 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 14:55:58.345521 (MainThread): Parsing macros/core.sql
+2021-09-19 14:55:58.348888 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 14:55:58.354453 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 14:55:58.363298 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 14:55:58.364644 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 14:55:58.380526 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 14:55:58.410355 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 14:55:58.429270 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 14:55:58.430693 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 14:55:58.437074 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 14:55:58.449363 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 14:55:58.455664 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 14:55:58.461093 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 14:55:58.465163 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 14:55:58.465851 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 14:55:58.466611 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 14:55:58.467832 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 14:55:58.475242 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 14:55:58.476882 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 14:55:58.478133 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 14:55:58.518999 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 14:55:58.520332 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 14:55:58.521273 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 14:55:58.522457 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 14:55:58.686061 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 14:55:58.693906 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 14:55:58.696744 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 14:55:58.699403 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 14:55:58.701961 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 14:55:58.704308 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 14:55:58.713678 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak".
+2021-09-19 14:55:58.738841 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:55:58.740412 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:55:58.741974 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:55:58.743608 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 14:55:58.760130 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.er.stg
+- models.er.dwh
+
+2021-09-19 14:55:58.764294 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '504107d7-ceae-4b08-b8a7-fedf09bb1e93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4f3243fd0>]}
+2021-09-19 14:55:58.768482 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-19 14:55:58.768806 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '504107d7-ceae-4b08-b8a7-fedf09bb1e93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4f31c5e20>]}
+2021-09-19 14:55:58.768961 (MainThread): Found 6 models, 4 tests, 1 snapshot, 0 analyses, 166 macros, 0 operations, 0 seed files, 2 sources, 0 exposures
+2021-09-19 14:55:58.769976 (MainThread): 
+2021-09-19 14:55:58.770184 (MainThread): Acquiring new bigquery connection "master".
+2021-09-19 14:55:58.771457 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_radjobads".
+2021-09-19 14:55:58.771604 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-19 14:55:59.391649 (ThreadPoolExecutor-0_0): Unhandled error while running:
+list dataset
+2021-09-19 14:55:59.392637 (ThreadPoolExecutor-0_0): __init__() got an unexpected keyword argument 'page_size'
+2021-09-19 14:55:59.393835 (MainThread): Connection 'master' was properly closed.
+2021-09-19 14:55:59.393937 (MainThread): Connection 'list_radjobads' was properly closed.
+2021-09-19 14:55:59.394254 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4f31b0d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4f318dfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4f31ef9d0>]}
+2021-09-19 14:55:59.394565 (MainThread): Flushing usage events
+2021-09-19 14:55:59.899527 (MainThread): Encountered an error:
+2021-09-19 14:55:59.899788 (MainThread): Runtime Error
+  __init__() got an unexpected keyword argument 'page_size'
+2021-09-19 14:55:59.913414 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 153, in exception_handler
+    yield
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 204, in query_schemas
+    all_datasets = client.list_datasets(project=database,
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 433, in list_datasets
+    return page_iterator.HTTPIterator(
+TypeError: __init__() got an unexpected keyword argument 'page_size'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 425, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 514, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/utils.py", line 474, in connected
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 491, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 208, in list_schemas
+    return self.connections._retry_and_handle(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 185, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error
+  __init__() got an unexpected keyword argument 'page_size'
+
+2021-09-19 15:06:13.092399 (MainThread): Running with dbt=0.20.2
+2021-09-19 15:06:13.497962 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-09-19 15:06:13.499173 (MainThread): Tracking: tracking
+2021-09-19 15:06:13.509411 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b3a89e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b47dae20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b47dad30>]}
+2021-09-19 15:06:13.521525 (MainThread): Partial parsing not enabled
+2021-09-19 15:06:13.540131 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 15:06:13.552239 (MainThread): Parsing macros/etc.sql
+2021-09-19 15:06:13.553810 (MainThread): Parsing macros/catalog.sql
+2021-09-19 15:06:13.559116 (MainThread): Parsing macros/adapters.sql
+2021-09-19 15:06:13.575514 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 15:06:13.577738 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 15:06:13.580018 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 15:06:13.588131 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 15:06:13.591883 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 15:06:13.603667 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 15:06:13.605074 (MainThread): Parsing macros/core.sql
+2021-09-19 15:06:13.608190 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 15:06:13.614602 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 15:06:13.623078 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 15:06:13.624520 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 15:06:13.639293 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 15:06:13.670269 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 15:06:13.688521 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 15:06:13.689943 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 15:06:13.696648 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 15:06:13.708555 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 15:06:13.715070 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 15:06:13.720516 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 15:06:13.724548 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 15:06:13.725239 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 15:06:13.726105 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 15:06:13.727431 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 15:06:13.734775 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 15:06:13.736300 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 15:06:13.737564 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 15:06:13.779629 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 15:06:13.780981 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 15:06:13.781928 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 15:06:13.783123 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 15:06:13.947743 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 15:06:13.955482 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 15:06:13.958326 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 15:06:13.961057 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 15:06:13.963795 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 15:06:13.966223 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 15:06:13.975203 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak".
+2021-09-19 15:06:14.000628 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 15:06:14.002236 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 15:06:14.003664 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 15:06:14.005097 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 15:06:14.020966 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.er.dwh
+- models.er.stg
+
+2021-09-19 15:06:14.024682 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '30a0b77d-15bb-4d22-b1db-977052be9f86', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b4a6ff40>]}
+2021-09-19 15:06:14.029051 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-19 15:06:14.029382 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '30a0b77d-15bb-4d22-b1db-977052be9f86', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b4a370a0>]}
+2021-09-19 15:06:14.029545 (MainThread): Found 6 models, 4 tests, 1 snapshot, 0 analyses, 166 macros, 0 operations, 0 seed files, 2 sources, 0 exposures
+2021-09-19 15:06:14.030526 (MainThread): 
+2021-09-19 15:06:14.030731 (MainThread): Acquiring new bigquery connection "master".
+2021-09-19 15:06:14.031871 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_radjobads".
+2021-09-19 15:06:14.031985 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-19 15:06:14.673552 (ThreadPoolExecutor-0_0): Unhandled error while running:
+list dataset
+2021-09-19 15:06:14.673849 (ThreadPoolExecutor-0_0): __init__() got an unexpected keyword argument 'page_size'
+2021-09-19 15:06:14.675290 (MainThread): Connection 'master' was properly closed.
+2021-09-19 15:06:14.675415 (MainThread): Connection 'list_radjobads' was properly closed.
+2021-09-19 15:06:14.675772 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b4a0b970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b4a1ab20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b48d7550>]}
+2021-09-19 15:06:14.676136 (MainThread): Flushing usage events
+2021-09-19 15:06:15.151242 (MainThread): Encountered an error:
+2021-09-19 15:06:15.151510 (MainThread): Runtime Error
+  __init__() got an unexpected keyword argument 'page_size'
+2021-09-19 15:06:15.165338 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 153, in exception_handler
+    yield
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 204, in query_schemas
+    all_datasets = client.list_datasets(project=database,
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 433, in list_datasets
+    return page_iterator.HTTPIterator(
+TypeError: __init__() got an unexpected keyword argument 'page_size'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 425, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 514, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/utils.py", line 474, in connected
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 491, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 208, in list_schemas
+    return self.connections._retry_and_handle(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 185, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error
+  __init__() got an unexpected keyword argument 'page_size'
+
+2021-09-19 15:07:27.344038 (MainThread): Running with dbt=0.20.2
+2021-09-19 15:07:27.736910 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 15:07:27.738236 (MainThread): Tracking: tracking
+2021-09-19 15:07:27.746927 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faae2a86a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faae38cbbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faae38cba90>]}
+2021-09-19 15:07:27.758071 (MainThread): Partial parsing not enabled
+2021-09-19 15:07:27.778085 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 15:07:27.790457 (MainThread): Parsing macros/etc.sql
+2021-09-19 15:07:27.792162 (MainThread): Parsing macros/catalog.sql
+2021-09-19 15:07:27.797850 (MainThread): Parsing macros/adapters.sql
+2021-09-19 15:07:27.814599 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 15:07:27.816755 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 15:07:27.819045 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 15:07:27.827332 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 15:07:27.831522 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 15:07:27.842266 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 15:07:27.844089 (MainThread): Parsing macros/core.sql
+2021-09-19 15:07:27.847812 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 15:07:27.853525 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 15:07:27.862143 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 15:07:27.863644 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 15:07:27.878300 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 15:07:27.908321 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 15:07:27.926967 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 15:07:27.928453 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 15:07:27.934857 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 15:07:27.947119 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 15:07:27.952923 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 15:07:27.958057 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 15:07:27.962239 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 15:07:27.963195 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 15:07:27.963971 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 15:07:27.965203 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 15:07:27.972450 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 15:07:27.973969 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 15:07:27.975227 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 15:07:28.016754 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 15:07:28.018119 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 15:07:28.019063 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 15:07:28.020263 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 15:07:28.184059 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 15:07:28.191703 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 15:07:28.195007 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 15:07:28.197729 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 15:07:28.200312 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 15:07:28.202929 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 15:07:28.212880 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak".
+2021-09-19 15:07:28.238568 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 15:07:28.240041 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 15:07:28.241485 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 15:07:28.242988 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 15:07:28.259302 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.er.stg
+- models.er.dwh
+
+2021-09-19 15:07:28.263202 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fb6a0bb5-a8c2-46c0-98f9-f656be467a0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faae3a22f10>]}
+2021-09-19 15:07:28.267380 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-19 15:07:28.267674 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fb6a0bb5-a8c2-46c0-98f9-f656be467a0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faae39bfc70>]}
+2021-09-19 15:07:28.267832 (MainThread): Found 6 models, 4 tests, 1 snapshot, 0 analyses, 166 macros, 0 operations, 0 seed files, 2 sources, 0 exposures
+2021-09-19 15:07:28.268782 (MainThread): 
+2021-09-19 15:07:28.268983 (MainThread): Acquiring new bigquery connection "master".
+2021-09-19 15:07:28.269842 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_radjobads".
+2021-09-19 15:07:28.269954 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-19 15:07:28.926460 (ThreadPoolExecutor-0_0): Unhandled error while running:
+list dataset
+2021-09-19 15:07:28.926737 (ThreadPoolExecutor-0_0): __init__() got an unexpected keyword argument 'page_size'
+2021-09-19 15:07:28.928049 (MainThread): Connection 'master' was properly closed.
+2021-09-19 15:07:28.928156 (MainThread): Connection 'list_radjobads' was properly closed.
+2021-09-19 15:07:28.928436 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faae39f3c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faae3989e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faae39ce3d0>]}
+2021-09-19 15:07:28.928737 (MainThread): Flushing usage events
+2021-09-19 15:07:29.382164 (MainThread): Encountered an error:
+2021-09-19 15:07:29.382427 (MainThread): Runtime Error
+  __init__() got an unexpected keyword argument 'page_size'
+2021-09-19 15:07:29.394164 (MainThread): Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 153, in exception_handler
+    yield
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 204, in query_schemas
+    all_datasets = client.list_datasets(project=database,
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 433, in list_datasets
+    return page_iterator.HTTPIterator(
+TypeError: __init__() got an unexpected keyword argument 'page_size'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 425, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 514, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/utils.py", line 474, in connected
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/task/runnable.py", line 491, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 208, in list_schemas
+    return self.connections._retry_and_handle(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/anaconda3/envs/load_bq/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 185, in exception_handler
+    raise RuntimeException(exc_message)
+dbt.exceptions.RuntimeException: Runtime Error
+  __init__() got an unexpected keyword argument 'page_size'
+
+2021-09-19 17:30:38.737709 (MainThread): Running with dbt=0.20.2
+2021-09-19 17:30:40.084447 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 17:30:40.086569 (MainThread): Tracking: tracking
+2021-09-19 17:30:40.101968 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d099cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7ecf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7ece80>]}
+2021-09-19 17:30:40.121282 (MainThread): Partial parsing not enabled
+2021-09-19 17:30:40.147215 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 17:30:40.165870 (MainThread): Parsing macros/etc.sql
+2021-09-19 17:30:40.167792 (MainThread): Parsing macros/catalog.sql
+2021-09-19 17:30:40.174700 (MainThread): Parsing macros/adapters.sql
+2021-09-19 17:30:40.193937 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 17:30:40.196475 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 17:30:40.200293 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 17:30:40.216508 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 17:30:40.223360 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 17:30:40.237576 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 17:30:40.239238 (MainThread): Parsing macros/core.sql
+2021-09-19 17:30:40.243034 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 17:30:40.251170 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 17:30:40.266394 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 17:30:40.268076 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 17:30:40.286199 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 17:30:40.325659 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 17:30:40.346664 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 17:30:40.348398 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 17:30:40.361508 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 17:30:40.376310 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 17:30:40.383175 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 17:30:40.390108 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 17:30:40.394786 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 17:30:40.395570 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 17:30:40.396448 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 17:30:40.397926 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 17:30:40.412711 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 17:30:40.414540 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 17:30:40.416026 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 17:30:40.468102 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 17:30:40.469796 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 17:30:40.470937 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 17:30:40.472193 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 17:30:40.704205 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 17:30:40.716875 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 17:30:40.720289 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 17:30:40.723905 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 17:30:40.727187 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 17:30:40.730127 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 17:30:40.742666 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak_scd2".
+2021-09-19 17:30:40.782119 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 17:30:40.784263 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 17:30:40.786517 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 17:30:40.789152 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 17:30:40.817532 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.er.stg
+- models.er.dwh
+
+2021-09-19 17:30:40.823391 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd318e001-0ee4-4e52-ab03-c917b04acfda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d8fcd90>]}
+2021-09-19 17:30:40.831271 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-19 17:30:40.832980 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd318e001-0ee4-4e52-ab03-c917b04acfda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d827a30>]}
+2021-09-19 17:30:40.833215 (MainThread): Found 6 models, 4 tests, 1 snapshot, 0 analyses, 166 macros, 0 operations, 0 seed files, 2 sources, 0 exposures
+2021-09-19 17:30:40.834529 (MainThread): 
+2021-09-19 17:30:40.834810 (MainThread): Acquiring new bigquery connection "master".
+2021-09-19 17:30:40.835578 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_radjobads".
+2021-09-19 17:30:40.835728 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-19 17:30:42.170562 (MainThread): Connection 'master' was properly closed.
+2021-09-19 17:30:42.170884 (MainThread): Connection 'list_radjobads' was properly closed.
+2021-09-19 17:30:42.171248 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d90ee20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d8f0790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d827970>]}
+2021-09-19 17:30:42.171596 (MainThread): Flushing usage events
+2021-09-19 17:30:42.654726 (MainThread): Encountered an error:
+2021-09-19 17:30:42.655108 (MainThread): Runtime Error
+  Unable to generate access token, if you're using impersonate_service_account, make sure your initial account has the "roles/iam.serviceAccountTokenCreator" role on the account you are trying to impersonate.
+  
+  ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+2021-09-19 17:30:42.662394 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 153, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/retry.py", line 189, in retry_target
+    return target()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 206, in query_schemas
+    return [ds.dataset_id for ds in all_datasets]
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 206, in <listcomp>
+    return [ds.dataset_id for ds in all_datasets]
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 214, in _items_iter
+    for page in self._page_iter(increment=False):
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 253, in _page_iter
+    page = self._next_page()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 382, in _next_page
+    response = self._get_next_page_response()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 441, in _get_next_page_response
+    return self.api_request(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 424, in api_request
+    return self._call_api(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 765, in _call_api
+    return call()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/retry.py", line 286, in retry_wrapped_func
+    return retry_target(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/retry.py", line 189, in retry_target
+    return target()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/_http.py", line 473, in api_request
+    response = self._make_request(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/_http.py", line 337, in _make_request
+    return self._do_request(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/_http.py", line 375, in _do_request
+    return self.http.request(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/auth/transport/requests.py", line 476, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/auth/credentials.py", line 133, in before_request
+    self.refresh(request)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/oauth2/credentials.py", line 293, in refresh
+    ) = reauth.refresh_grant(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/oauth2/reauth.py", line 338, in refresh_grant
+    _client._handle_error_response(response_data)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/oauth2/_client.py", line 60, in _handle_error_response
+    raise exceptions.RefreshError(error_details, response_data)
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 425, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 514, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/usr/local/Cellar/python@3.8/3.8.12/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/Cellar/python@3.8/3.8.12/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/Cellar/python@3.8/3.8.12/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/utils.py", line 474, in connected
+    return func(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 491, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 208, in list_schemas
+    return self.connections._retry_and_handle(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/Cellar/python@3.8/3.8.12/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 170, in exception_handler
+    raise RuntimeException(message)
+dbt.exceptions.RuntimeException: Runtime Error
+  Unable to generate access token, if you're using impersonate_service_account, make sure your initial account has the "roles/iam.serviceAccountTokenCreator" role on the account you are trying to impersonate.
+  
+  ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+
+2021-09-19 17:32:33.710534 (MainThread): Running with dbt=0.20.2
+2021-09-19 17:32:34.471881 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 17:32:34.473716 (MainThread): Tracking: tracking
+2021-09-19 17:32:34.484780 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0f5b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0f1a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0f1bb0>]}
+2021-09-19 17:32:34.500233 (MainThread): Partial parsing not enabled
+2021-09-19 17:32:34.525596 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 17:32:34.539306 (MainThread): Parsing macros/etc.sql
+2021-09-19 17:32:34.541233 (MainThread): Parsing macros/catalog.sql
+2021-09-19 17:32:34.547189 (MainThread): Parsing macros/adapters.sql
+2021-09-19 17:32:34.567031 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 17:32:34.569707 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 17:32:34.572312 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 17:32:34.582550 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 17:32:34.587112 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 17:32:34.600224 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 17:32:34.602089 (MainThread): Parsing macros/core.sql
+2021-09-19 17:32:34.606248 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 17:32:34.613050 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 17:32:34.623584 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 17:32:34.625125 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 17:32:34.643024 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 17:32:34.679188 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 17:32:34.701301 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 17:32:34.703252 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 17:32:34.712483 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 17:32:34.727527 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 17:32:34.734376 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 17:32:34.740552 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 17:32:34.745297 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 17:32:34.746103 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 17:32:34.747020 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 17:32:34.748487 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 17:32:34.758577 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 17:32:34.760706 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 17:32:34.762177 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 17:32:34.812414 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 17:32:34.814013 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 17:32:34.815112 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 17:32:34.816377 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 17:32:35.023882 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 17:32:35.032786 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 17:32:35.036007 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 17:32:35.039395 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 17:32:35.043031 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 17:32:35.045909 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 17:32:35.058741 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak_scd2".
+2021-09-19 17:32:35.092708 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 17:32:35.094677 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 17:32:35.096392 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 17:32:35.098252 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 17:32:35.119947 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.er.stg
+- models.er.dwh
+
+2021-09-19 17:32:35.124562 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '585eb9d3-71db-446f-b5c3-4f12d3bc63de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2254f0>]}
+2021-09-19 17:32:35.130036 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-19 17:32:35.130369 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '585eb9d3-71db-446f-b5c3-4f12d3bc63de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a225670>]}
+2021-09-19 17:32:35.130543 (MainThread): Found 6 models, 4 tests, 1 snapshot, 0 analyses, 166 macros, 0 operations, 0 seed files, 2 sources, 0 exposures
+2021-09-19 17:32:35.131821 (MainThread): 
+2021-09-19 17:32:35.132053 (MainThread): Acquiring new bigquery connection "master".
+2021-09-19 17:32:35.132708 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_radjobads".
+2021-09-19 17:32:35.132832 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-19 17:32:35.906371 (MainThread): Connection 'master' was properly closed.
+2021-09-19 17:32:35.906640 (MainThread): Connection 'list_radjobads' was properly closed.
+2021-09-19 17:32:35.906980 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a209a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a184e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a184df0>]}
+2021-09-19 17:32:35.907317 (MainThread): Flushing usage events
+2021-09-19 17:32:36.376215 (MainThread): Encountered an error:
+2021-09-19 17:32:36.376551 (MainThread): Runtime Error
+  Unable to generate access token, if you're using impersonate_service_account, make sure your initial account has the "roles/iam.serviceAccountTokenCreator" role on the account you are trying to impersonate.
+  
+  ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+2021-09-19 17:32:36.383525 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 153, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/retry.py", line 189, in retry_target
+    return target()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 206, in query_schemas
+    return [ds.dataset_id for ds in all_datasets]
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 206, in <listcomp>
+    return [ds.dataset_id for ds in all_datasets]
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 214, in _items_iter
+    for page in self._page_iter(increment=False):
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 253, in _page_iter
+    page = self._next_page()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 382, in _next_page
+    response = self._get_next_page_response()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 441, in _get_next_page_response
+    return self.api_request(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 424, in api_request
+    return self._call_api(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 765, in _call_api
+    return call()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/retry.py", line 286, in retry_wrapped_func
+    return retry_target(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/retry.py", line 189, in retry_target
+    return target()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/_http.py", line 473, in api_request
+    response = self._make_request(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/_http.py", line 337, in _make_request
+    return self._do_request(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/_http.py", line 375, in _do_request
+    return self.http.request(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/auth/transport/requests.py", line 476, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/auth/credentials.py", line 133, in before_request
+    self.refresh(request)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/oauth2/credentials.py", line 293, in refresh
+    ) = reauth.refresh_grant(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/oauth2/reauth.py", line 338, in refresh_grant
+    _client._handle_error_response(response_data)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/oauth2/_client.py", line 60, in _handle_error_response
+    raise exceptions.RefreshError(error_details, response_data)
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 425, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 514, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/usr/local/Cellar/python@3.8/3.8.12/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/Cellar/python@3.8/3.8.12/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/Cellar/python@3.8/3.8.12/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/utils.py", line 474, in connected
+    return func(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 491, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 208, in list_schemas
+    return self.connections._retry_and_handle(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/Cellar/python@3.8/3.8.12/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 170, in exception_handler
+    raise RuntimeException(message)
+dbt.exceptions.RuntimeException: Runtime Error
+  Unable to generate access token, if you're using impersonate_service_account, make sure your initial account has the "roles/iam.serviceAccountTokenCreator" role on the account you are trying to impersonate.
+  
+  ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+
+2021-09-19 17:34:44.035986 (MainThread): Running with dbt=0.20.2
+2021-09-19 17:34:44.808683 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/radbrt/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-09-19 17:34:44.810198 (MainThread): Tracking: tracking
+2021-09-19 17:34:44.819635 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105927e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059232e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059233a0>]}
+2021-09-19 17:34:44.834801 (MainThread): Partial parsing not enabled
+2021-09-19 17:34:44.860071 (MainThread): Parsing macros/custom_scd.sql
+2021-09-19 17:34:44.873285 (MainThread): Parsing macros/etc.sql
+2021-09-19 17:34:44.875261 (MainThread): Parsing macros/catalog.sql
+2021-09-19 17:34:44.881016 (MainThread): Parsing macros/adapters.sql
+2021-09-19 17:34:44.902214 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-19 17:34:44.904734 (MainThread): Parsing macros/materializations/view.sql
+2021-09-19 17:34:44.907474 (MainThread): Parsing macros/materializations/table.sql
+2021-09-19 17:34:44.918285 (MainThread): Parsing macros/materializations/copy.sql
+2021-09-19 17:34:44.922392 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-19 17:34:44.934864 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-19 17:34:44.936497 (MainThread): Parsing macros/core.sql
+2021-09-19 17:34:44.940297 (MainThread): Parsing macros/materializations/test.sql
+2021-09-19 17:34:44.946661 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-19 17:34:44.956920 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-19 17:34:44.958452 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-19 17:34:44.975772 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-19 17:34:45.010505 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-19 17:34:45.031159 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-19 17:34:45.032885 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-19 17:34:45.040365 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-19 17:34:45.054335 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-19 17:34:45.061032 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-19 17:34:45.067097 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-19 17:34:45.071847 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-19 17:34:45.072627 (MainThread): Parsing macros/etc/query.sql
+2021-09-19 17:34:45.073514 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-19 17:34:45.074939 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-19 17:34:45.084023 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-19 17:34:45.086905 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-19 17:34:45.088383 (MainThread): Parsing macros/adapters/common.sql
+2021-09-19 17:34:45.134306 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-19 17:34:45.135996 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-19 17:34:45.137034 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-19 17:34:45.138224 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-19 17:34:45.337106 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_010".
+2021-09-19 17:34:45.346221 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_010".
+2021-09-19 17:34:45.349394 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_virk_load_date".
+2021-09-19 17:34:45.353357 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_max_load_date".
+2021-09-19 17:34:45.355855 (MainThread): Sending event: {'category': 'dbt', 'action': 'experimental_parser', 'label': '86cb1e51-1640-464c-a461-f170595992fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a78e20>]}
+2021-09-19 17:34:45.356717 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_foretak_020".
+2021-09-19 17:34:45.359518 (MainThread): Acquiring new bigquery connection "model.enhetsregisteret.wrk_virksomheter_020".
+2021-09-19 17:34:45.371346 (MainThread): Acquiring new bigquery connection "snapshot.enhetsregisteret.dwh_foretak_scd2".
+2021-09-19 17:34:45.404583 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 17:34:45.406486 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 17:34:45.408371 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 17:34:45.410105 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-19 17:34:45.429999 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.er.dwh
+- models.er.stg
+
+2021-09-19 17:34:45.434621 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '86cb1e51-1640-464c-a461-f170595992fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ac0310>]}
+2021-09-19 17:34:45.439246 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-19 17:34:45.439697 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '86cb1e51-1640-464c-a461-f170595992fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ac0220>]}
+2021-09-19 17:34:45.439898 (MainThread): Found 6 models, 4 tests, 1 snapshot, 0 analyses, 166 macros, 0 operations, 0 seed files, 2 sources, 0 exposures
+2021-09-19 17:34:45.441434 (MainThread): 
+2021-09-19 17:34:45.441665 (MainThread): Acquiring new bigquery connection "master".
+2021-09-19 17:34:45.442636 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_radjobads".
+2021-09-19 17:34:45.442800 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-19 17:34:46.158291 (MainThread): Connection 'master' was properly closed.
+2021-09-19 17:34:46.158594 (MainThread): Connection 'list_radjobads' was properly closed.
+2021-09-19 17:34:46.158933 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ade8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ad4370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105aa4f70>]}
+2021-09-19 17:34:46.159293 (MainThread): Flushing usage events
+2021-09-19 17:34:46.634881 (MainThread): Encountered an error:
+2021-09-19 17:34:46.635167 (MainThread): Runtime Error
+  Unable to generate access token, if you're using impersonate_service_account, make sure your initial account has the "roles/iam.serviceAccountTokenCreator" role on the account you are trying to impersonate.
+  
+  ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+2021-09-19 17:34:46.643068 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 153, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/retry.py", line 189, in retry_target
+    return target()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 206, in query_schemas
+    return [ds.dataset_id for ds in all_datasets]
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 206, in <listcomp>
+    return [ds.dataset_id for ds in all_datasets]
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 214, in _items_iter
+    for page in self._page_iter(increment=False):
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 253, in _page_iter
+    page = self._next_page()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 382, in _next_page
+    response = self._get_next_page_response()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/page_iterator.py", line 441, in _get_next_page_response
+    return self.api_request(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 424, in api_request
+    return self._call_api(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 765, in _call_api
+    return call()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/retry.py", line 286, in retry_wrapped_func
+    return retry_target(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/api_core/retry.py", line 189, in retry_target
+    return target()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/_http.py", line 473, in api_request
+    response = self._make_request(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/_http.py", line 337, in _make_request
+    return self._do_request(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/cloud/_http.py", line 375, in _do_request
+    return self.http.request(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/auth/transport/requests.py", line 476, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/auth/credentials.py", line 133, in before_request
+    self.refresh(request)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/oauth2/credentials.py", line 293, in refresh
+    ) = reauth.refresh_grant(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/oauth2/reauth.py", line 338, in refresh_grant
+    _client._handle_error_response(response_data)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/google/oauth2/_client.py", line 60, in _handle_error_response
+    raise exceptions.RefreshError(error_details, response_data)
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 425, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 514, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/usr/local/Cellar/python@3.8/3.8.12/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/Cellar/python@3.8/3.8.12/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/Cellar/python@3.8/3.8.12/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/utils.py", line 474, in connected
+    return func(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 491, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 208, in list_schemas
+    return self.connections._retry_and_handle(
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 542, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/Cellar/python@3.8/3.8.12/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.20.2_1/libexec/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 170, in exception_handler
+    raise RuntimeException(message)
+dbt.exceptions.RuntimeException: Runtime Error
+  Unable to generate access token, if you're using impersonate_service_account, make sure your initial account has the "roles/iam.serviceAccountTokenCreator" role on the account you are trying to impersonate.
+  
+  ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+
