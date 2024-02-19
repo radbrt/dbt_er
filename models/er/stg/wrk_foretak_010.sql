@@ -1,15 +1,14 @@
+{{config(materialized='view')}}
+
 WITH foretak AS (
-    SELECT CAST(organisasjonsnummer AS STRING) AS orgnr,
+    SELECT 
+    CAST(organisasjonsnummer AS STRING) AS orgnr,
     navn,
     antallAnsatte AS antall_ansatte,
-    naeringskode1.kode AS nkode1,
-    CAST(valid_date AS DATE) AS valid_date
-    FROM {{ source('enhetsregisteret', 'wrk_foretak') }}
-), 
-max_date AS (
-        SELECT CAST(max_valid_date AS DATE) AS max_valid_date FROM {{ ref('wrk_max_load_date') }}
+    naeringskode1_kode AS nace_1
+    FROM {{ source('landing', 'foretak_siste') }}
+    WHERE nace_1 IN (
+        SELECT naerk FROM {{ ref('wrk_nace') }}
+        )
 )
 SELECT * FROM foretak
-WHERE valid_date IN(
-    SELECT max_valid_date FROM max_date
-)

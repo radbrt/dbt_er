@@ -1,0 +1,64 @@
+
+version: 2
+
+models:
+  - name: employers
+    description: Employers
+    columns:
+    - name: foretak_kommunenummer
+      description: Municipality ID
+    - name: foretak_kommune
+      description: Municipality name
+    - name: foretak_org_nr
+      description: Company ID
+    - name: foretak_navn 
+      description: Company name
+    - name: foretak_sektor_gruppe
+      description: Company sector group
+    tests:
+      - dbt_constraints.primary_key:
+          column_name: foretak_org_nr
+
+  - name: job_ads
+    description: Job ads
+    columns:
+    - name: stillingsnummer
+      description: Job ID
+    - name: registrert_dato
+      description: Registration date
+    - name: stillingstittel
+      description: Job title
+    - name: yrkeskode
+      description: ISCO job code
+    - name: bedrift_org_nr
+      description: Company Business Unit ID
+    - name: antall_stillinger
+      description: Number of open positions advertised
+    tests:
+      - dbt_constraints.primary_key:
+          column_name: stillingsnummer
+      - dbt_constraints.foreign_key:
+          fk_column_name: bedrift_org_nr
+          pk_table_name: ref('business_units')
+          pk_column_name: bedrift_org_nr
+          config:
+            severity: warn
+            always_create_constraint: true
+
+  - name: business_units
+    description: Business units
+    columns:
+    - name: bedrift_org_nr
+      description: 9-digit official Company unit ID number
+    - name: bedrift_navn
+      description: Name of the business unit
+    tests:
+      - dbt_constraints.primary_key:
+          column_name: bedrift_org_nr
+      - dbt_constraints.foreign_key:
+          fk_column_name: foretak_org_nr
+          pk_table_name: ref('employers')
+          pk_column_name: foretak_org_nr
+          config:
+            severity: warn
+            always_create_constraint: true

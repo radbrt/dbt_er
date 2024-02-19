@@ -1,9 +1,26 @@
 version: 2
 
 sources:
-  - name: enhetsregisteret
+  - name: landing
     description: The enhetsregister kilde
-    database: radjobads
+    database: dbthouse
+    schema: landing
     tables:
-      - name: wrk_foretak
-      - name: wrk_virksomheter
+      - name: foretak_siste
+        columns:
+        - name: organisasjonsnummer
+          description: Company ID
+        - name: navn
+          description: Company name
+        - name: antallansatte
+          description: Number of employees
+        - name: institusjonellsektorkode_kode
+          description: Institutional sector code
+        - name: institusjonellsektorkode_beskrivelse
+          description: Institutional sector description
+        - name: registreringsdatoenhetsregisteret
+          description: Company creation date
+      - name: nkoder
+
+
+

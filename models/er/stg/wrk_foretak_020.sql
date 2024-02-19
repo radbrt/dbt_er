@@ -1,10 +1,5 @@
-WITH foretak AS (
-    SELECT 
-    orgnr, 
-    navn,
-    nkode1,
-    antall_ansatte,
-    CAST(valid_date AS timestamp) AS updated_at
-    FROM {{ ref('wrk_foretak_010') }}
+WITH source AS (
+  SELECT * FROM {{ ref('wrk_foretak_010') }}
+  WHERE substr(nace_1, 1, 1)='1'
 )
-SELECT * FROM foretak
+SELECT * FROM source

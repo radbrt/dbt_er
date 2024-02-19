@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: nav
+    description: Job ads
+    columns:
+    - name: stillingsnummer
+      description: Job ID
+    - name: registrert_dato
+      description: Registration date
+    - name: stillingstittel
+      description: Job title
+    - name: yrkeskode
+      description: ISCO job code
+    - name: arbeidssted_kommune
+      description: Municipality
+    - name: arbeidssted_kommunenummer
+      description: Municipality ID
+    - name: arbeidssted_fylke
+      description: County
+    - name: arbeidssted_fylkesnummer
+      description: County ID
+    - name: arbeidssted_land
+    - name: bedrift_navn
+      description: Company Unit Name
+    - name: bedrift_org_nr
+      description: Company Business Unit ID
+    - name: foretak_org_nr
+      description: Company Unit ID
+    - name: foretak_navn 
+      description: Company name
+    - name: antall_stillinger
+      description: Number of positions

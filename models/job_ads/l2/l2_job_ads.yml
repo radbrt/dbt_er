@@ -1,0 +1,40 @@
+version: 2
+models:
+  - name: l2_job_ads
+    description: This dbt model, `l2_job_ads`, consolidates job advertisements from
+      the upstream 'all_jobs' table, ensuring each job ID (stillingsnummer) is represented
+      by its most recently registered entry. The transformation entails selecting
+      the latest ad per job ID based on the registration date and standardizing location
+      information to refer specifically to company (foretak) details. The model primarily
+      serves to streamline job advertisement data for analytics, removing duplicates
+      and aligning with the most current information.
+    columns:
+      - name: stillingsnummer
+        description: Unique identifier of the job listing.
+      - name: registrert_dato
+        description: The date the job was registered, formatted as DD.MM.YYYY.
+      - name: stillingstittel
+        description: The title of the job position.
+      - name: yrkeskode
+        description: ISCO (International Standard Classification of Occupations) code
+          associated with the job.
+      - name: foretak_kommune
+        description: The municipality where the company is located.
+      - name: foretak_kommunenummer
+        description: Numerical ID of the municipality where the company is located.
+      - name: foretak_fylkesnummer
+        description: Numerical ID of the county where the company is located.
+      - name: foretak_fylke
+        description: The county where the company is located.
+      - name: bedrift_navn
+        description: Name of the company unit posting the job ad.
+      - name: bedrift_org_nr
+        description: Business unit ID of the company posting the job ad.
+      - name: foretak_org_nr
+        description: Organization ID of the company.
+      - name: foretak_navn
+        description: Name of the company.
+      - name: antall_stillinger
+        description: The number of positions available for the job.
+      - name: foretak_sektor_gruppe
+        description: The sector group of the company.
