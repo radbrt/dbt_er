@@ -1,0 +1,22 @@
+version: 2
+models:
+  - name: wrk_foretak_020
+    description: This dbt model selects all records from the 'wrk_foretak_010' model
+      (Foretak fra enhetsregisteret) where the first character of the 'nace_1' (Industry
+      code) column is '1', effectively filtering the dataset to only include companies
+      in a specific sector identified by this initial digit. The purpose is to narrow
+      down the companies to a particular industry sector as defined by the 'nace_1'
+      code starting with '1'.
+    columns:
+      - name: orgnr
+        description: Company ID. This is a unique identifier for companies registered
+          in the enhetsregisteret.
+      - name: navn
+        description: Company name. The official registered name of the company.
+      - name: nace_1
+        description: Industry code. A classification code representing the primary
+          business activity of the company. In this model, it is specifically filtered
+          to only include those starting with '1'.
+      - name: antall_ansatte
+        description: Number of employees. Represents the total count of individuals
+          employed by the company.
