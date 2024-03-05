@@ -1,26 +1,40 @@
 version: 2
 
 sources:
-  - name: landing
+  - name: brreg
     description: The enhetsregister kilde
-    database: dbthouse
-    schema: landing
+    database: landing
+    schema: brreg
     tables:
-      - name: foretak_siste
+      - name: foretak
+        description: Latest copy of the national business register, containing legal business entities (companies)
         columns:
         - name: organisasjonsnummer
-          description: Company ID
+          description: Official company ID from national business registry
         - name: navn
           description: Company name
         - name: antallansatte
-          description: Number of employees
+          description: Number of employees as reported through A-ordningen
         - name: institusjonellsektorkode_kode
           description: Institutional sector code
         - name: institusjonellsektorkode_beskrivelse
           description: Institutional sector description
         - name: registreringsdatoenhetsregisteret
           description: Company creation date
+        - name: naeringskode1_kode
+          description: 5 digit Industry code (NACE, SN07) (format NN.NNN)
+
+  - name: ssb
+    description: The enhetsregister kilde
+    database: landing
+    schema: ssb
+    tables:
       - name: nkoder
-
-
-
+        description: Næringskode (SN07) codes and descriptions
+        columns:
+        - name: _smart_source_bucket
+        - name: _smart_source_file
+        - name: _smart_source_lineno
+        - name: naerk
+        - name: naerk_tekst
+        - name: naerk_tekst_engelsk

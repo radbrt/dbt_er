@@ -1,11 +1,4 @@
-{{config(materialized='table')}}
-
-WITH source AS (
-  SELECT 
-  to_varchar(naerk) AS naerk,
-  naerk_tekst
-  FROM {{ source('landing', 'nkoder') }}
+with source AS (
+  SELECT * FROM {{ source('ssb', 'nkoder') }}
 )
 SELECT * FROM source
-
-
