@@ -1,0 +1,46 @@
+version: 2
+models:
+  - name: foretak_situasjonsuttak
+    description: Denne modellen gir en oppdatert oversikt over juridiske enheter (foretak)
+      hentet fra det nasjonale foretaksregisteret. Modellen inneholder det siste oppdaterte
+      settet med data for hvert foretak, inkludert nøkkelinformasjon som antall ansatte,
+      sektorinformasjon, og næringskode. Modellen er særlig nyttig for analyser knyttet
+      til markedstrender, segmentering av foretak basert på størrelse eller sektor,
+      og for økonomisk forskning.
+    columns:
+      - name: organisasjonsnummer
+        description: Offisielt ID-nummer for foretaket, gitt av det nasjonale foretaksregisteret.
+      - name: navn
+        description: Fullt juridisk navn på foretaket.
+      - name: antallansatte
+        description: Antall ansatte i foretaket, rapportert gjennom A-ordningen.
+      - name: institusjonellsektorkode_kode
+        description: Koden som representerer hvilken sektor foretaket tilhører, basert
+          på en institusjonell klassifisering.
+      - name: institusjonellsektorkode_beskrivelse
+        description: Tekstlig beskrivelse av sektoren foretaket tilhører.
+      - name: registreringsdatoenhetsregisteret
+        description: Datoen da foretaket ble registrert i enhetsregisteret.
+      - name: naeringskode1_kode
+        description: Primær næringskode for foretaket, som angir foretakets hovedvirksomhet.
+          Koden følger NACE, SN07 standarden og har formatet NN.NNN.
+
+
+unit_tests:
+  # Tester alle kolonner
+  - name: unit_foretak_situasjonsuttak # unique name of the test
+    model: foretak_situasjonsuttak # name of the model being unit tested
+    given: # optional: list of inputs to provide as fixtures
+      - input: source('brreg', 'foretak')
+        format: csv
+        rows: |
+          organisasjonsnummer,navn,antallansatte,institusjonellsektorkode_kode,institusjonellsektorkode_beskrivelse,registreringsdatoenhetsregisteret,naeringskode1_kode,filnavn
+          123456789,Test Foretak AS,50,8400,Offentlig administrasjon,2010-12-25,84.110,2023-04-01
+          987654321,Annet Foretak AS,100,2100,Privat sektor,2008-05-15,62.010,2023-04-01
+          111222333,Gammelt Foretak AS,25,8400,Offentlig administrasjon,2005-07-20,84.130,2020-01-01
+    expect: # required: the expected output given the inputs above
+      format: csv
+      rows: |
+        organisasjonsnummer,navn,antallansatte,institusjonellsektorkode_kode,institusjonellsektorkode_beskrivelse,registreringsdatoenhetsregisteret,naeringskode1_kode
+        123456789,Test Foretak AS,50,8400,Offentlig administrasjon,2010-12-25,84.110
+        987654321,Annet Foretak AS,100,2100,Privat sektor,2008-05-15,62.010
