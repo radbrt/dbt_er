@@ -28,25 +28,26 @@ vars:
   dbt_constraints_sources_nn_enabled: true
 
 models:
+
   enhetsregisteret:
+    +schema: develop
+    +database: dbthouse
     +materialized: table
     +persist_docs:
       columns: true
       relation: true
     er:
+      +schema: dwh
       stg:
+        +schema: develop
         +materialized: view
       dwh:
+        +schema: dwh
         +materialized: table
     job_ads:
       +database: dbthouse
+      +schema: develop
       +materialized: table
-      l1:
-        +schema: l1
-        +materialized: table
-      l2:
-        +schema: l2
-        +materialized: table
 
 snapshots:
   +target_schema: er

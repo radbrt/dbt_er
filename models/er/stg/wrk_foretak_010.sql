@@ -6,7 +6,7 @@ WITH foretak AS (
     navn,
     antallAnsatte AS antall_ansatte,
     naeringskode1_kode AS nace_1
-    FROM {{ source('landing', 'foretak_siste') }}
+    FROM {{ ref('foretak_situasjonsuttak') }}
     WHERE nace_1 IN (
         SELECT naerk FROM {{ ref('wrk_nace') }}
         )

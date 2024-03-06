@@ -1,0 +1,27 @@
+version: 2
+models:
+  - name: wrk_foretak_010
+    description: This model is a view that presents a filtered subset of the latest
+      legal business entities in the national business register. It specifically includes
+      companies that operate within industries specified in the 'wrk_nace' model.
+      The view provides an organized format of business records including the official
+      company ID, name, number of employees, and the primary industry code (NACE,
+      SN07). This allows for streamlined access to curated business information relevant
+      for analysis or reporting purposes within those specified industry sectors.
+    columns:
+      - name: orgnr
+        description: The official identification number for a company as provided
+          by the national business registry. This is cast as a string for consistency
+          in reporting and analysis.
+      - name: navn
+        description: The registered name of the company. This represents the legal
+          name under which the company operates.
+      - name: antall_ansatte
+        description: The number of employees at the company as recorded through the
+          A-ordningen reporting mechanism. This figure provides insight into the size
+          and scale of the company's operations.
+      - name: nace_1
+        description: The primary industry code (based on the NACE, SN07 classification
+          system) under which the company operates. This 5 digit code (format NN.NNN)
+          categorizes businesses into specific industries, enabling targeted analysis
+          of sectors.

@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: cases
+    description: Misc data for case studies
+    database: landing
+    schema: cases
+    tables:
+      - name: walmart_sales
+        description: Walmart sales data from Kaggle
+        columns:
+        - name: store
+        - name: date
+        - name: weekly_sales
+        - name: holiday_flag
+        - name: temperature
+        - name: fuel_price
+        - name: cpi
+        - name: unemployment
+
+
+

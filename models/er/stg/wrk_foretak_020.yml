@@ -1,22 +1,31 @@
 version: 2
 models:
   - name: wrk_foretak_020
-    description: This dbt model selects all records from the 'wrk_foretak_010' model
-      (Foretak fra enhetsregisteret) where the first character of the 'nace_1' (Industry
-      code) column is '1', effectively filtering the dataset to only include companies
-      in a specific sector identified by this initial digit. The purpose is to narrow
-      down the companies to a particular industry sector as defined by the 'nace_1'
-      code starting with '1'.
+    description: This dbt model is a refinement of the 'wrk_foretak_010' model, focusing
+      specifically on companies within the national business register (foretak_siste)
+      that operate in the agriculture sector. It achieves this focus by selecting
+      companies whose primary industry code (nace_1) begins with '1', which corresponds
+      to the agriculture sector according to the NACE classification system. As such,
+      this model provides a narrowed-down dataset comprising company IDs, names, employee
+      counts, and primary industry codes for companies operating within the agriculture
+      sector.
     columns:
       - name: orgnr
-        description: Company ID. This is a unique identifier for companies registered
-          in the enhetsregisteret.
+        description: The official ID of the company as registered in the national
+          business registry. This is a string representation of the 'organisasjonsnummer'
+          field sourced from 'foretak_siste'. It uniquely identifies each company
+          within the dataset.
       - name: navn
-        description: Company name. The official registered name of the company.
-      - name: nace_1
-        description: Industry code. A classification code representing the primary
-          business activity of the company. In this model, it is specifically filtered
-          to only include those starting with '1'.
+        description: The registered name of the company as it appears in 'foretak_siste'.
+          This field provides the official legal name under which the company operates.
       - name: antall_ansatte
-        description: Number of employees. Represents the total count of individuals
-          employed by the company.
+        description: The count of employees working for the company, reported through
+          A-ordningen. It is derived from the 'antallansatte' field in 'foretak_siste',
+          representing the total number of individuals employed by the company.
+      - name: nace_1
+        description: The primary industry code of the company according to the 5-digit
+          NACE, SN07 format (NN.NNN). This code indicates the sector in which the
+          company operates (in this model's case, companies whose nace_1 begins with
+          '1' are within the agriculture sector). It is sourced from 'naeringskode1_kode'
+          in 'foretak_siste' and plays a critical role in the filtering applied in
+          this model.
