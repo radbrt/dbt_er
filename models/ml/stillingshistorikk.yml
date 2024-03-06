@@ -1,0 +1,29 @@
+version: 2
+models:
+  - name: stillingshistorikk
+    description: Modellen 'stillingshistorikk' gir en oversikt over en persons historikk
+      i forskjellige stillinger, med detaljer som hendelsestype, dato for hendelse,
+      stillingsforhold, stillingsprosent og lønn. Modellen er beregnet for å støtte
+      forretningsanalyser relatert til arbeidsforhold, endringer i stillingsprosent
+      og lønnsutvikling over tid.
+    columns:
+      - name: aksjon_kode
+        description: Kode som indikerer typen hendelse. Gir innsikt i hva slags aksjon
+          som er utført, for eksempel en endring i stillingsforhold eller lønn.
+      - name: aksjon_dato
+        description: Datoen for når hendelsen (angitt av aksjon_kode) fant sted. Nyttig
+          for tidsanalyser og trendidentifisering.
+      - name: syntetisk_id
+        description: En unik identifikator for personen, basert på syntetiske data.
+          Brukes for å koble sammen ulike datarekker relatert til samme individ uten
+          å eksponere personlige identifikatorer.
+      - name: stillingsforhold
+        description: En tekstbeskrivelse av stillingsforholdet, for eksempel 'fulltid'
+          eller 'deltid'. Viktig for å forstå arbeidsmønsteret til den ansatte.
+      - name: stillingsprosent
+        description: Angir den ansattes stillingsprosent. Verdien er representert
+          som en brøkdel, hvor 1 tilsvarer 100% stilling. Denne informasjonen er kritisk
+          for å analysere deltid- eller heltidsengasjement.
+      - name: loenn
+        description: Lønnen til den ansatte, uten justering for stillingsprosent.
+          Dette gjør det mulig å undersøke lønnsutvikling uavhengig av stillingsstørrelse.

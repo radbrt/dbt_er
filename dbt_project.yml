@@ -14,21 +14,11 @@ clean-targets:
   - "dbt_modules"
 
 vars:
-  # The package can be temporarily disabled using this variable
   dbt_constraints_enabled: true
-
-  # The package can also add constraints on sources if you have sufficient privileges
   dbt_constraints_sources_enabled: false
-
-  # You can also be specific on which constraints are enabled for sources
-  # You must also enable dbt_constraints_sources_enabled above
   dbt_constraints_sources_pk_enabled: true
-  dbt_constraints_sources_uk_enabled: true
-  dbt_constraints_sources_fk_enabled: true
-  dbt_constraints_sources_nn_enabled: true
 
 models:
-
   enhetsregisteret:
     +schema: develop
     +database: dbthouse
@@ -47,6 +37,9 @@ models:
     job_ads:
       +database: dbthouse
       +schema: develop
+      +materialized: table
+    ml:
+      +schema: ml
       +materialized: table
 
 snapshots:

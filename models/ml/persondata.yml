@@ -1,0 +1,30 @@
+version: 2
+models:
+  - name: persondata
+    description: Denne modellen inneholder bearbeidede data om ansatte, inkludert
+      grunnleggende personinformasjon, sivilstatus, bosted, alder, pensjonsordninger
+      og geografiske opplysninger. Formålet er å tilrettelegge for analyser relatert
+      til arbeidsforhold, demografisk segmentering og regelverkstilpasning.
+    columns:
+      - name: person_foedt_aar
+        description: Fødselsåret til personen.
+      - name: sivil_status_kd
+        description: Koden som representerer personens sivilstatus.
+      - name: kjoenn_kd
+        description: Koden som angir personens kjønn.
+      - name: adresse_utland_flg
+        description: Flagg som indikerer om personen har adresse i utlandet, representert
+          ved en boolean verdi (1 for ja, 0 for nei).
+      - name: alder_aar_mnd_eksakte
+        description: Personens alder i år og måneder, representert med desimaler for
+          å inkludere nøyaktig alder ned til måneden.
+      - name: pensjonsordning_kd_siste
+        description: Koden for personens siste pensjonsordning.
+      - name: LAND
+        description: Landet personen er født i.
+      - name: gruppe_foedt_kd
+        description: Koden som identifiserer hvilken regelverksgruppe personen tilhører
+          basert på fødselsår.
+      - name: syntetisk_id
+        description: En unik identifikator for personen, brukt til å koble persondata
+          med syntetiske datasett.

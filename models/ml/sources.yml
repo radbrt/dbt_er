@@ -1,0 +1,85 @@
+version: 2
+
+sources:
+  - name: cases
+    description: Misc data for case studies
+    database: landing
+    schema: cases
+    tables:
+      - name: persondata
+        description: Data om ansatte
+        columns:
+        - name: PERSON_FOEDT_AAR
+        - name: SIVIL_STATUS_KD
+          description: Sivilstatus
+        - name: KJOENN_KD
+          description: Kjønn
+        - name: ADRESSE_UTLAND_FLG
+          description: Adresse_Utland
+        - name: ALDER_AAR_MND_EKSAKTE
+          description: alder person i dag
+        - name: PENSJONSORDNING_KD_SISTE
+          description: Pensjonsordning nå
+        - name: LAND
+          description: Fødeland
+        - name: GRUPPE_FOEDT_KD
+          description: Regelverksgruppe for person
+        - name: synthId
+          description: person kobling syntetisk data
+
+      - name: stillingshistorikk
+        description: Stillingshistorikk
+        columns:
+        - name: Aksjon_Kd
+          description: Type hendelse
+          meta:
+            enum: 
+              code: 
+                11: inntreden stilling
+                21: oppdatering
+                31: sluttet i stilling
+                28: i permisjon
+                12: gjeninntreden fra permisjon
+        - name: Aksjon_Dato
+          description: Dato for Aksjon_Kd
+        - name: synthId
+          description: person kobling syntetiske data
+        - name: stillingsforhold
+          description: hvilket stillingsforhold for personen
+        - name: Deltid
+          description: stillingsprosent
+        - name: Loenn
+          description: Lønn ikke justert for deltid
+      - name: nyc_payroll
+        description: The famous NYC Payroll data from https://www.kaggle.com/datasets/new-york-city/nyc-citywide-payroll-data
+        columns:
+        - name: "FISCAL YEAR"
+        - name: "AGENCY NAME"
+        - name: "LAST NAME"
+        - name: "FIRST NAME"
+        - name: "MID INIT"
+        - name: "AGENCY START DATE"
+        - name: "WORK LOCATION BOROUGH"
+        - name: "TITLE DESCRIPTION"
+        - name: "LEAVE STATUS AS OF JUNE 30"
+        - name: "BASE SALARY"
+        - name: "PAY BASIS"
+        - name: "REGULAR HOURS"
+        - name: "REGULAR GROSS PAID"
+        - name: "OT HOURS"
+        - name: "TOTAL OT PAID"
+        - name: "TOTAL OTHER PAY"
+      - name: walmart_sales
+        description: Walmart sales data from Kaggle
+        columns:
+        - name: store
+        - name: date
+        - name: weekly_sales
+        - name: holiday_flag
+        - name: temperature
+        - name: fuel_price
+        - name: cpi
+        - name: unemployment
+        
+
+
