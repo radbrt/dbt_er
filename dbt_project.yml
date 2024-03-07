@@ -48,6 +48,7 @@ models:
       +database: dbthouse
       +schema: develop
       +materialized: table
-
+    snapshots:
+      +target_schema: dwh
 snapshots:
   +target_schema: er

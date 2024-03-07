@@ -31,23 +31,23 @@ def model(dbt, session):
     mse = mean_squared_error(y_test, y_pred)
     r2 = r2_score(y_test, y_pred)
     now = datetime.datetime.utcnow()
-    id = str(uuid.uuid4())
+    model_uuid = str(uuid.uuid4())
     database = dbt.this.database
     schema = dbt.this.schema
     identifier = dbt.this.identifier
 
     accuracy_df = pd.DataFrame({
-        "id": [id], 
-        "mse": [mse], 
-        "r2": [r2], 
-        "timestamp": [now],
-        "database": [database],
-        "schema": [schema],
-        "identifier": [identifier]
+        "UUID": [model_uuid], 
+        "MSE": [mse], 
+        "R2": [r2], 
+        "TIMESTAMP": [now],
+        "DATABASE": [database],
+        "SCHEMA": [schema],
+        "IDENTIFIER": [identifier]
         })
 
     stage = f"@dbthouse.develop.ml_models/{database}/{schema}/{identifier}/"
-    model_loc = f"tmp/{id}.pkl"
+    model_loc = f"tmp/{model_uuid}.pkl"
     joblib.dump(model, model_loc)
     session.file.put(model_loc, stage)
 
