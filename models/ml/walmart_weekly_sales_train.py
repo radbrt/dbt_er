@@ -32,11 +32,21 @@ def model(dbt, session):
     r2 = r2_score(y_test, y_pred)
     now = datetime.datetime.utcnow()
     id = str(uuid.uuid4())
+    database = dbt.this.database
+    schema = dbt.this.schema
+    identifier = dbt.this.identifier
 
+    accuracy_df = pd.DataFrame({
+        "id": [id], 
+        "mse": [mse], 
+        "r2": [r2], 
+        "timestamp": [now],
+        "database": [database],
+        "schema": [schema],
+        "identifier": [identifier]
+        })
 
-    accuracy_df = pd.DataFrame({"id": [id], "mse": [mse], "r2": [r2], "timestamp": [now]})
-
-    stage = f"@dbthouse.develop.ml_models/{dbt.this.database}/{dbt.this.schema}/{dbt.this.identifier}/"
+    stage = f"@dbthouse.develop.ml_models/{database}/{schema}/{identifier}/"
     model_loc = f"tmp/{id}.pkl"
     joblib.dump(model, model_loc)
     session.file.put(model_loc, stage)
