@@ -1,4 +1,3 @@
-# ml_models/dbthouse/hho_develop/churn_prediction/79135d6d-1fb9-42ec-93bf-975510628de8.pkl.gz
 import sys
 from joblib import load
 import pandas as pd
