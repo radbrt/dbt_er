@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: lake
+    database: landing
+    schema: brreg
+    tables:
+      - name: people
+        description: >
+            This source table is actually a set of files in external storage.
+            The dbt-external-tables package provides handy macros for getting
+            those files queryable, just in time for modeling.
+        external:       # required: S3 file path, GCS file path, Snowflake stage, Synapse data source
+          location: "@landing.brreg.foretak/people/"
+          file_format: landing.brreg.jsonl
+        columns:
+          - name: etl_date
+            data_type: varchar(255)
+            description: "Date event began ETL"
+            # Expressions can manipulate the variant value prior to casting to data_type.
+            expression: METADATA$FILENAME
